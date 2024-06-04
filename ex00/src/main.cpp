@@ -6,14 +6,23 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 16:04:15 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/04 16:08:49 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/04 17:19:14 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "Zombie.hpp"
+#include <iostream>
 
 int main()
 {
-	std::cout << "Zombie" << std::endl;
+	Zombie nicolas = Zombie("Nicolas");
+	Zombie *lucas = newZombie("Lucas");
+	randomChump("Victor");
+
+	nicolas.announce();
+	lucas->announce();
+
+	delete lucas;
+
+	return 0;
 }
