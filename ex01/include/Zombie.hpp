@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 16:05:05 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/04 17:29:38 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/04 19:44:26 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,12 @@
 class Zombie
 {
 	public:
+		Zombie();
 		Zombie(std::string name);
 		~Zombie();
 
 		void announce(void);
+		void setName(std::string name);
 		
 	private:
 		std::string _name;
