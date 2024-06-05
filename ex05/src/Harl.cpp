@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 17:12:50 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/05 18:54:38 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/05 18:58:44 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,10 @@ void Harl::complain(std::string level)
 {
 	std::string levels[] = { "DEBUG", "INFO", "WARNING", "ERROR" };
 
-	for (int i = 0; i < 4; ++i) {
-		if (levels[i] == level) {
+	for (int i = 0; i < 4; ++i)
+	{
+		if (levels[i] == level)
+		{
 			(this->*_ftab[i])();
 			return ;
 		}
