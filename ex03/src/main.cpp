@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 11:39:51 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/05 14:17:52 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/05 14:44:12 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ int main()
 		club.setType("some other type of club");
 		bob.attack();
 	}
-	/*
 	{
 		Weapon club = Weapon("crude spiked club");
 		
@@ -34,6 +33,5 @@ int main()
 		club.setType("some other type of club");
 		jim.attack();
 	}
-	*/
 	return 0;
 }
