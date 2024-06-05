@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 14:54:39 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/05 16:17:01 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/05 16:46:40 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,19 @@ bool Replace::read()
 
 void Replace::replace()
 {
-	
+	std::string newContent;
+    size_t pos = 0;
+    size_t found_pos;
+
+    while ((found_pos = _fileContent.find(_s1, pos)) != std::string::npos)
+    {
+        newContent.append(_fileContent, pos, found_pos - pos);
+        newContent.append(_s2);
+        pos = found_pos + _s1.length();
+    }
+    newContent.append(_fileContent, pos, _fileContent.length() - pos);
+
+    _fileContent = newContent;
 }
 
 void Replace::create()
