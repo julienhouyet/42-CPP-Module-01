@@ -6,11 +6,11 @@
 #    By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/04 16:06:08 by jhouyet           #+#    #+#              #
-#    Updated: 2024/06/05 11:38:51 by jhouyet          ###   ########.fr        #
+#    Updated: 2024/06/05 14:27:54 by jhouyet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 		= zombie
+NAME 		= weapon
 
 SRC_DIR 	= src
 INC_DIR		= include
