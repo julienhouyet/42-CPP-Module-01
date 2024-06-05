@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 17:12:50 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/05 17:47:07 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/05 18:14:35 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,12 @@
 
 Harl::Harl()
 {
-
+	fptr ftab[4];
+	
+    ftab[0] = &Harl::_debug;
+    ftab[1] = &Harl::_info;
+    ftab[2] = &Harl::_warning;
+    ftab[3] = &Harl::_error;
 }
 
 Harl::~Harl()
@@ -25,7 +30,7 @@ Harl::~Harl()
 
 void Harl::complain(std::string level)
 {
-	std::cout << level << std::endl;
+	
 }
 
 void Harl::_debug(void)
