@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 11:41:36 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/05 12:06:25 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/05 14:21:09 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,16 @@
 class HumanA
 {
 	public:
-		HumanA(std::string _name, Weapon& _weapon);
+		HumanA(std::string name, Weapon& weapon);
 		~HumanA();
+		
+		void setWeapon(const Weapon& weapon);
 
-		void attack(void);
-		void setWeapon(const Weapon& _weapon);
+		void attack(void) const;
 		
 	private:
-		Weapon _weapon;
 		std::string _name;
+		Weapon& _weapon;
 };
 
 #endif
