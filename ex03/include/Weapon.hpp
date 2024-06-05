@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 11:40:43 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/05 11:50:40 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/05 12:06:18 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Weapon
 {
 	public:
-		Weapon();
+		Weapon(std::string type);
 		~Weapon();
 
 		void setType(const std::string type);
@@ -30,4 +30,4 @@ class Weapon
 		std::string _type;
 };
 
-#endif;
+#endif
