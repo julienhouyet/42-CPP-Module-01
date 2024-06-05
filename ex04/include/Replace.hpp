@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 14:54:43 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/05 15:57:28 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/05 16:14:09 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ class Replace
 		~Replace();
 
 		bool read();
+		void replace();
+		void create();
 
 	private:
 		std::string _filename;

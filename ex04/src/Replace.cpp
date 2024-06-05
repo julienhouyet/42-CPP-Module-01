@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 14:54:39 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/05 16:09:22 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/05 16:17:01 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,18 @@ bool Replace::read()
     file.close();
 
 	return (1);
+}
+
+void Replace::replace()
+{
+	
+}
+
+void Replace::create()
+{
+	std::ofstream file (this->_filename + ".replace");
+
+	file << this->_fileContent;
+
+	file.close();
 }

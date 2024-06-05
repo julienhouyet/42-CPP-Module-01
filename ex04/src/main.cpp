@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 14:54:36 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/05 16:07:11 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/05 16:16:08 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int main(int argc, char **argv)
 		if (replace.read())
 		{
 			std::cout << "OK" << std::endl;
+			replace.create();
 		}
 	}
 	return (0);
